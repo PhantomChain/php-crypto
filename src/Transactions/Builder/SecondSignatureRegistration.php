@@ -3,17 +3,17 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions\Builder;
+namespace PhantomChain\Crypto\Transactions\Builder;
 
-use ArkEcosystem\Crypto\Identities\PublicKey;
+use PhantomChain\Crypto\Identities\PublicKey;
 
 /**
  * This is the second signature registration transaction class.
@@ -27,7 +27,7 @@ class SecondSignatureRegistration extends AbstractTransaction
      *
      * @param string $secondPassphrase
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\SecondSignatureRegistration
+     * @return \PhantomChain\Crypto\Transactions\Builder\SecondSignatureRegistration
      */
     public function signature(string $secondPassphrase): self
     {
@@ -45,6 +45,6 @@ class SecondSignatureRegistration extends AbstractTransaction
      */
     protected function getType(): int
     {
-        return \ArkEcosystem\Crypto\Enums\Types::SECOND_SIGNATURE_REGISTRATION;
+        return \PhantomChain\Crypto\Enums\Types::SECOND_SIGNATURE_REGISTRATION;
     }
 }

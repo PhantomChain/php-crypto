@@ -3,21 +3,21 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions;
+namespace PhantomChain\Crypto\Transactions;
 
 use BitWasp\Bitcoin\Base58;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Bitcoin\Crypto\Hash;
-use ArkEcosystem\Crypto\Enums\Types;
-use ArkEcosystem\Crypto\Configuration\Network;
+use PhantomChain\Crypto\Enums\Types;
+use PhantomChain\Crypto\Configuration\Network;
 use BitWasp\Bitcoin\Signature\SignatureFactory;
 use BitWasp\Bitcoin\Key\Factory\PublicKeyFactory;
 use BrianFaust\Binary\Buffer\Writer\Buffer as Writer;
@@ -45,7 +45,7 @@ class Transaction
      *
      * @param \BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey $keys
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public function sign(PrivateKey $keys): self
     {
@@ -60,7 +60,7 @@ class Transaction
      *
      * @param \BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey $keys
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public function secondSign(PrivateKey $keys): self
     {
@@ -110,7 +110,7 @@ class Transaction
      * @param string $serialized
      * @param int    $startOffset
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public function parseSignatures(string $serialized, int $startOffset): self
     {
@@ -246,7 +246,7 @@ class Transaction
     /**
      * Perform AIP11 compliant deserialization.
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public static function deserialize(string $serialized): self
     {

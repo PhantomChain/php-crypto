@@ -3,25 +3,25 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Tests\Crypto\Transactions\Serializers;
+namespace PhantomChain\Tests\Crypto\Transactions\Serializers;
 
-use ArkEcosystem\Tests\Crypto\TestCase;
-use ArkEcosystem\Crypto\Transactions\Serializer;
-use ArkEcosystem\Crypto\Transactions\Serializers\IPFS;
+use PhantomChain\Tests\Crypto\TestCase;
+use PhantomChain\Crypto\Transactions\Serializer;
+use PhantomChain\Crypto\Transactions\Serializers\IPFS;
 
 /**
  * This is the ipfs serializer test class.
  *
  * @author Brian Faust <brian@ark.io>
- * @covers \ArkEcosystem\Crypto\Transactions\Serializers\IPFS
+ * @covers \PhantomChain\Crypto\Transactions\Serializers\IPFS
  */
 class IPFSTest extends TestCase
 {

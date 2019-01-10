@@ -3,27 +3,27 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Tests\Crypto\Managers;
+namespace PhantomChain\Tests\Crypto\Managers;
 
-use ArkEcosystem\Tests\Crypto\TestCase;
-use ArkEcosystem\Crypto\Networks\Devnet;
-use ArkEcosystem\Crypto\Networks\Mainnet;
-use ArkEcosystem\Crypto\Configuration\Network;
-use ArkEcosystem\Crypto\Networks\AbstractNetwork;
+use PhantomChain\Tests\Crypto\TestCase;
+use PhantomChain\Crypto\Networks\Devnet;
+use PhantomChain\Crypto\Networks\Mainnet;
+use PhantomChain\Crypto\Configuration\Network;
+use PhantomChain\Crypto\Networks\AbstractNetwork;
 
 /**
  * This is the network configuration test class.
  *
  * @author Brian Faust <brian@ark.io>
- * @covers \ArkEcosystem\Crypto\Configuration\Network
+ * @covers \PhantomChain\Crypto\Configuration\Network
  */
 class NetworkTest extends TestCase
 {

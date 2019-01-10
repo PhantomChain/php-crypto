@@ -3,25 +3,25 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Tests\Crypto\Transactions\Builder;
+namespace PhantomChain\Tests\Crypto\Transactions\Builder;
 
-use ArkEcosystem\Tests\Crypto\TestCase;
-use ArkEcosystem\Crypto\Identities\PublicKey;
-use ArkEcosystem\Crypto\Transactions\Builder\SecondSignatureRegistration;
+use PhantomChain\Tests\Crypto\TestCase;
+use PhantomChain\Crypto\Identities\PublicKey;
+use PhantomChain\Crypto\Transactions\Builder\SecondSignatureRegistration;
 
 /**
  * This is the second signature registration builder test class.
  *
  * @author Brian Faust <brian@ark.io>
- * @covers \ArkEcosystem\Crypto\Transactions\Builder\SecondSignatureRegistration
+ * @covers \PhantomChain\Crypto\Transactions\Builder\SecondSignatureRegistration
  */
 class SecondSignatureRegistrationTest extends TestCase
 {

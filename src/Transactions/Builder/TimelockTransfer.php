@@ -3,15 +3,15 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions\Builder;
+namespace PhantomChain\Crypto\Transactions\Builder;
 
 /**
  * This is the timelock transfer transaction class.
@@ -25,7 +25,7 @@ class TimelockTransfer extends Transfer
      *
      * @param int $timelock
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\TimelockTransfer
+     * @return \PhantomChain\Crypto\Transactions\Builder\TimelockTransfer
      */
     public function timelock(int $timelock): self
     {
@@ -37,7 +37,7 @@ class TimelockTransfer extends Transfer
     /**
      * Set the timelock type of the transfer to timestamp.
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\TimelockTransfer
+     * @return \PhantomChain\Crypto\Transactions\Builder\TimelockTransfer
      */
     public function timestamp(): self
     {
@@ -49,7 +49,7 @@ class TimelockTransfer extends Transfer
     /**
      * Set the timelock type of the transfer to block height.
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\TimelockTransfer
+     * @return \PhantomChain\Crypto\Transactions\Builder\TimelockTransfer
      */
     public function height(): self
     {
@@ -63,6 +63,6 @@ class TimelockTransfer extends Transfer
      */
     protected function getType(): int
     {
-        return \ArkEcosystem\Crypto\Enums\Types::TIMELOCK_TRANSFER;
+        return \PhantomChain\Crypto\Enums\Types::TIMELOCK_TRANSFER;
     }
 }

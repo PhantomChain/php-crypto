@@ -3,18 +3,18 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions;
+namespace PhantomChain\Crypto\Transactions;
 
 use BitWasp\Buffertools\Buffer;
-use ArkEcosystem\Crypto\Configuration\Network;
+use PhantomChain\Crypto\Configuration\Network;
 use BrianFaust\Binary\Buffer\Writer\Buffer as Writer;
 
 /**
@@ -44,7 +44,7 @@ class Serializer
     /**
      * Create a new serializer instance.
      *
-     * @param \ArkEcosystem\Crypto\Transaction|array $transaction
+     * @param \PhantomChain\Crypto\Transaction|array $transaction
      */
     private function __construct($transaction)
     {
@@ -58,7 +58,7 @@ class Serializer
     /**
      * Create a new deserializer instance.
      *
-     * @param \ArkEcosystem\Crypto\Transaction|array $transaction
+     * @param \PhantomChain\Crypto\Transaction|array $transaction
      */
     public static function new($transaction)
     {

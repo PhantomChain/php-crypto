@@ -3,15 +3,15 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions\Builder;
+namespace PhantomChain\Crypto\Transactions\Builder;
 
 /**
  * This is the transfer transaction class.
@@ -25,7 +25,7 @@ class Transfer extends AbstractTransaction
      *
      * @param string $recipientId
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\Transfer
+     * @return \PhantomChain\Crypto\Transactions\Builder\Transfer
      */
     public function recipient(string $recipientId): self
     {
@@ -39,7 +39,7 @@ class Transfer extends AbstractTransaction
      *
      * @param int $amount
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\Transfer
+     * @return \PhantomChain\Crypto\Transactions\Builder\Transfer
      */
     public function amount(int $amount): self
     {
@@ -53,7 +53,7 @@ class Transfer extends AbstractTransaction
      *
      * @param string $vendorField
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\Transfer
+     * @return \PhantomChain\Crypto\Transactions\Builder\Transfer
      */
     public function vendorField(string $vendorField): self
     {
@@ -67,6 +67,6 @@ class Transfer extends AbstractTransaction
      */
     protected function getType(): int
     {
-        return \ArkEcosystem\Crypto\Enums\Types::TRANSFER;
+        return \PhantomChain\Crypto\Enums\Types::TRANSFER;
     }
 }

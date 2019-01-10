@@ -16,7 +16,7 @@
          verbose="true"
 >
     <testsuites>
-        <testsuite name="Ark PHP Crypto Test Suite">
+        <testsuite name="PHANTOM PHP Crypto Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>

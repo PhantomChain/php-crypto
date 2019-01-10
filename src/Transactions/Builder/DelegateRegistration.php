@@ -3,17 +3,17 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions\Builder;
+namespace PhantomChain\Crypto\Transactions\Builder;
 
-use ArkEcosystem\Crypto\Identities\PublicKey;
+use PhantomChain\Crypto\Identities\PublicKey;
 
 /**
  * This is the delegate registration transaction class.
@@ -37,7 +37,7 @@ class DelegateRegistration extends AbstractTransaction
      *
      * @param string $username
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\DelegateRegistration
+     * @return \PhantomChain\Crypto\Transactions\Builder\DelegateRegistration
      */
     public function username(string $username): self
     {
@@ -51,7 +51,7 @@ class DelegateRegistration extends AbstractTransaction
      *
      * @param string $passphrase
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\AbstractTransaction
+     * @return \PhantomChain\Crypto\Transactions\Builder\AbstractTransaction
      */
     public function sign(string $passphrase): AbstractTransaction
     {
@@ -68,6 +68,6 @@ class DelegateRegistration extends AbstractTransaction
      */
     protected function getType(): int
     {
-        return \ArkEcosystem\Crypto\Enums\Types::DELEGATE_REGISTRATION;
+        return \PhantomChain\Crypto\Enums\Types::DELEGATE_REGISTRATION;
     }
 }

@@ -3,21 +3,21 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions;
+namespace PhantomChain\Crypto\Transactions;
 
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Bitcoin\Crypto\Hash;
-use ArkEcosystem\Crypto\Enums\Types;
+use PhantomChain\Crypto\Enums\Types;
 use BrianFaust\Binary\Hex\Reader as Hex;
-use ArkEcosystem\Crypto\Identities\Address;
+use PhantomChain\Crypto\Identities\Address;
 use BrianFaust\Binary\Buffer\Reader\Buffer as Reader;
 
 /**
@@ -71,7 +71,7 @@ class Deserializer
     /**
      * Perform AIP11 compliant deserialization.
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public function deserialize(): Transaction
     {
@@ -111,9 +111,9 @@ class Deserializer
      * Handle the deserialization of transaction data.
      *
      * @param int                              $assetOffset
-     * @param \ArkEcosystem\Crypto\Transaction $transaction
+     * @param \PhantomChain\Crypto\Transaction $transaction
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public function handleType(int $assetOffset, Transaction $transaction): Transaction
     {
@@ -125,9 +125,9 @@ class Deserializer
     /**
      * Handle the deserialization of transaction data with a version of 1.0.
      *
-     * @param \ArkEcosystem\Crypto\Transaction $transaction
+     * @param \PhantomChain\Crypto\Transaction $transaction
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public function handleVersionOne(Transaction $transaction): Transaction
     {
@@ -167,9 +167,9 @@ class Deserializer
     /**
      * Handle the deserialization of transaction data with a version of 2.0.
      *
-     * @param \ArkEcosystem\Crypto\Transaction $transaction
+     * @param \PhantomChain\Crypto\Transaction $transaction
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Transaction
+     * @return \PhantomChain\Crypto\Transactions\Transaction
      */
     public function handleVersionTwo(Transaction $transaction): Transaction
     {

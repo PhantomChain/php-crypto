@@ -3,26 +3,26 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Tests\Crypto\Transactions\Deserializers;
+namespace PhantomChain\Tests\Crypto\Transactions\Deserializers;
 
-use ArkEcosystem\Tests\Crypto\TestCase;
-use ArkEcosystem\Crypto\Identities\Address;
-use ArkEcosystem\Crypto\Transactions\Transaction;
-use ArkEcosystem\Crypto\Transactions\Deserializer;
+use PhantomChain\Tests\Crypto\TestCase;
+use PhantomChain\Crypto\Identities\Address;
+use PhantomChain\Crypto\Transactions\Transaction;
+use PhantomChain\Crypto\Transactions\Deserializer;
 
 /**
  * This is the second signature registration deserializer test class.
  *
  * @author Brian Faust <brian@ark.io>
- * @covers \ArkEcosystem\Crypto\Transactions\Deserializers\SecondSignatureRegistration
+ * @covers \PhantomChain\Crypto\Transactions\Deserializers\SecondSignatureRegistration
  */
 class SecondSignatureRegistrationTest extends TestCase
 {

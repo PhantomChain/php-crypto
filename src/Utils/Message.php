@@ -3,20 +3,20 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Utils;
+namespace PhantomChain\Crypto\Utils;
 
 use InvalidArgumentException;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Bitcoin\Crypto\Hash;
-use ArkEcosystem\Crypto\Identities\PrivateKey;
+use PhantomChain\Crypto\Identities\PrivateKey;
 use BitWasp\Bitcoin\Signature\SignatureFactory;
 use BitWasp\Bitcoin\Key\Factory\PublicKeyFactory;
 
@@ -82,7 +82,7 @@ class Message
      *
      * @param mixed $message
      *
-     * @return \ArkEcosystem\Crypto\Message
+     * @return \PhantomChain\Crypto\Message
      */
     public static function new($message): self
     {
@@ -107,7 +107,7 @@ class Message
      * @param string $message
      * @param string $passphrase
      *
-     * @return \ArkEcosystem\Crypto\Message
+     * @return \PhantomChain\Crypto\Message
      */
     public static function sign(string $message, string $passphrase): self
     {

@@ -3,20 +3,20 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions\Builder;
+namespace PhantomChain\Crypto\Transactions\Builder;
 
-use ArkEcosystem\Crypto\Utils\Slot;
-use ArkEcosystem\Crypto\Configuration\Fee;
-use ArkEcosystem\Crypto\Identities\PrivateKey;
-use ArkEcosystem\Crypto\Transactions\Transaction;
+use PhantomChain\Crypto\Utils\Slot;
+use PhantomChain\Crypto\Configuration\Fee;
+use PhantomChain\Crypto\Identities\PrivateKey;
+use PhantomChain\Crypto\Transactions\Transaction;
 
 /**
  * This is the abstract transaction class.
@@ -50,7 +50,7 @@ abstract class AbstractTransaction
     /**
      * Create a new transaction instance.
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\AbstractTransaction
+     * @return \PhantomChain\Crypto\Transactions\Builder\AbstractTransaction
      */
     public static function new(): self
     {
@@ -62,7 +62,7 @@ abstract class AbstractTransaction
      *
      * @param int $fee
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\AbstractTransaction
+     * @return \PhantomChain\Crypto\Transactions\Builder\AbstractTransaction
      */
     public function withFee(int $fee): self
     {
@@ -76,7 +76,7 @@ abstract class AbstractTransaction
      *
      * @param string $passphrase
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\AbstractTransaction
+     * @return \PhantomChain\Crypto\Transactions\Builder\AbstractTransaction
      */
     public function sign(string $passphrase): self
     {
@@ -94,7 +94,7 @@ abstract class AbstractTransaction
      *
      * @param string $secondPassphrase
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\AbstractTransaction
+     * @return \PhantomChain\Crypto\Transactions\Builder\AbstractTransaction
      */
     public function secondSign(string $secondPassphrase): self
     {

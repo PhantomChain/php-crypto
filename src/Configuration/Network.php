@@ -3,19 +3,19 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Configuration;
+namespace PhantomChain\Crypto\Configuration;
 
 use BitWasp\Bitcoin\Bitcoin;
-use ArkEcosystem\Crypto\Networks\Devnet;
-use ArkEcosystem\Crypto\Networks\AbstractNetwork;
+use PhantomChain\Crypto\Networks\Devnet;
+use PhantomChain\Crypto\Networks\AbstractNetwork;
 
 /**
  * This is the network configuration class.
@@ -27,7 +27,7 @@ class Network
     /**
      * The network used for crypto operations.
      *
-     * @var \ArkEcosystem\Crypto\Networks\AbstractNetwork
+     * @var \PhantomChain\Crypto\Networks\AbstractNetwork
      */
     private static $network;
 
@@ -47,7 +47,7 @@ class Network
     /**
      * Get the network used for crypto operations.
      *
-     * @return \ArkEcosystem\Crypto\Networks\AbstractNetwork
+     * @return \PhantomChain\Crypto\Networks\AbstractNetwork
      */
     public static function get(): AbstractNetwork
     {
@@ -57,7 +57,7 @@ class Network
     /**
      * Set the network used for crypto operations.
      *
-     * @param \ArkEcosystem\Crypto\Networks\AbstractNetwork $network
+     * @param \PhantomChain\Crypto\Networks\AbstractNetwork $network
      */
     public static function set(AbstractNetwork $network): void
     {

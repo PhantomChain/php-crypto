@@ -3,17 +3,17 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Identities;
+namespace PhantomChain\Crypto\Identities;
 
-use ArkEcosystem\Crypto\Networks\AbstractNetwork;
+use PhantomChain\Crypto\Networks\AbstractNetwork;
 
 /**
  * This is the wif class.
@@ -26,7 +26,7 @@ class WIF
      * Derive the WIF from the given passphrase.
      *
      * @param string                                             $passphrase
-     * @param \ArkEcosystem\Crypto\Networks\AbstractNetwork|null $network
+     * @param \PhantomChain\Crypto\Networks\AbstractNetwork|null $network
      *
      * @return string
      */

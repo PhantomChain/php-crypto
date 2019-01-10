@@ -1,7 +1,7 @@
 {
-    "name": "arkecosystem/crypto",
-    "description": "A simple PHP Cryptography Implementation for the Ark Blockchain.",
-    "keywords": ["api", "ark", "blockchain", "crypto", "currency"],
+    "name": "phantomchain/crypto",
+    "description": "A simple PHP Cryptography Implementation for the PHANTOM Blockchain.",
+    "keywords": ["api", "phantom", "blockchain", "crypto", "currency"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ArkEcosystem\\Crypto\\": "src"
+            "PhantomChain\\Crypto\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ArkEcosystem\\Tests\\Crypto\\": "tests"
+            "PhantomChain\\Tests\\Crypto\\": "tests"
         }
     },
     "config": {

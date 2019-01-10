@@ -3,15 +3,15 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions\Builder;
+namespace PhantomChain\Crypto\Transactions\Builder;
 
 /**
  * This is the multi payment transaction class.
@@ -36,7 +36,7 @@ class MultiPayment extends AbstractTransaction
      * @param string $recipientId
      * @param int    $amount
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\MultiPayment
+     * @return \PhantomChain\Crypto\Transactions\Builder\MultiPayment
      */
     public function add(string $recipientId, int $amount): self
     {
@@ -50,6 +50,6 @@ class MultiPayment extends AbstractTransaction
      */
     protected function getType(): int
     {
-        return \ArkEcosystem\Crypto\Enums\Types::MULTI_PAYMENT;
+        return \PhantomChain\Crypto\Enums\Types::MULTI_PAYMENT;
     }
 }

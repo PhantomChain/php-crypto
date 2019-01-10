@@ -3,15 +3,15 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Transactions\Builder;
+namespace PhantomChain\Crypto\Transactions\Builder;
 
 /**
  * This is the multisignature registration transaction class.
@@ -35,7 +35,7 @@ class MultiSignatureRegistration extends AbstractTransaction
      *
      * @param int $min
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\MultiSignatureRegistration
+     * @return \PhantomChain\Crypto\Transactions\Builder\MultiSignatureRegistration
      */
     public function min(int $min): self
     {
@@ -49,7 +49,7 @@ class MultiSignatureRegistration extends AbstractTransaction
      *
      * @param int $lifetime
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\MultiSignatureRegistration
+     * @return \PhantomChain\Crypto\Transactions\Builder\MultiSignatureRegistration
      */
     public function lifetime(int $lifetime): self
     {
@@ -63,7 +63,7 @@ class MultiSignatureRegistration extends AbstractTransaction
      *
      * @param array $keysgroup
      *
-     * @return \ArkEcosystem\Crypto\Transactions\Builder\MultiSignatureRegistration
+     * @return \PhantomChain\Crypto\Transactions\Builder\MultiSignatureRegistration
      */
     public function keysgroup(array $keysgroup): self
     {
@@ -79,6 +79,6 @@ class MultiSignatureRegistration extends AbstractTransaction
      */
     protected function getType(): int
     {
-        return \ArkEcosystem\Crypto\Enums\Types::MULTI_SIGNATURE_REGISTRATION;
+        return \PhantomChain\Crypto\Enums\Types::MULTI_SIGNATURE_REGISTRATION;
     }
 }

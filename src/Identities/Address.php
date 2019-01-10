@@ -3,25 +3,25 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Identities;
+namespace PhantomChain\Crypto\Identities;
 
 use BitWasp\Bitcoin\Base58;
 use BitWasp\Buffertools\Buffer;
-use ArkEcosystem\Crypto\Helpers;
+use PhantomChain\Crypto\Helpers;
 use BitWasp\Bitcoin\Crypto\Hash;
 use BitWasp\Bitcoin\Address\AddressCreator;
 use BrianFaust\Binary\UnsignedInteger\Writer;
-use ArkEcosystem\Crypto\Networks\AbstractNetwork;
+use PhantomChain\Crypto\Networks\AbstractNetwork;
 use BitWasp\Bitcoin\Address\PayToPubKeyHashAddress;
-use ArkEcosystem\Crypto\Configuration\Network as NetworkConfiguration;
+use PhantomChain\Crypto\Configuration\Network as NetworkConfiguration;
 use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey as EccPrivateKey;
 
 /**
@@ -35,7 +35,7 @@ class Address
      * Derive the address from the given passphrase.
      *
      * @param string                                             $passphrase
-     * @param \ArkEcosystem\Crypto\Networks\AbstractNetwork|null $network
+     * @param \PhantomChain\Crypto\Networks\AbstractNetwork|null $network
      *
      * @return string
      */
@@ -48,7 +48,7 @@ class Address
      * Derive the address from the given public key.
      *
      * @param string                                             $publicKey
-     * @param \ArkEcosystem\Crypto\Networks\AbstractNetwork|null $network
+     * @param \PhantomChain\Crypto\Networks\AbstractNetwork|null $network
      *
      * @return string
      */
@@ -66,7 +66,7 @@ class Address
      * Derive the address from the given private key.
      *
      * @param \BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey $privateKey
-     * @param ArkEcosystem\Crypto\Networks\AbstractNetwork|null            $network
+     * @param PhantomChain\Crypto\Networks\AbstractNetwork|null            $network
      *
      * @return string
      */
@@ -81,7 +81,7 @@ class Address
      * Validate the given address.
      *
      * @param string                                                 $address
-     * @param \ArkEcosystem\Crypto\Networks\AbstractNetwork|int|null $network
+     * @param \PhantomChain\Crypto\Networks\AbstractNetwork|int|null $network
      *
      * @return bool
      */

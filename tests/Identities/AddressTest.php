@@ -3,25 +3,25 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Tests\Crypto\Identities;
+namespace PhantomChain\Tests\Crypto\Identities;
 
-use ArkEcosystem\Tests\Crypto\TestCase;
-use ArkEcosystem\Crypto\Identities\PrivateKey;
-use ArkEcosystem\Crypto\Identities\Address as TestClass;
+use PhantomChain\Tests\Crypto\TestCase;
+use PhantomChain\Crypto\Identities\PrivateKey;
+use PhantomChain\Crypto\Identities\Address as TestClass;
 
 /**
  * This is the address test class.
  *
  * @author Brian Faust <brian@ark.io>
- * @covers \ArkEcosystem\Crypto\Identities\Address
+ * @covers \PhantomChain\Crypto\Identities\Address
  */
 class AddressTest extends TestCase
 {

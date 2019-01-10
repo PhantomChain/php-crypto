@@ -3,28 +3,28 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Tests\Crypto\Transactions\Serializers;
+namespace PhantomChain\Tests\Crypto\Transactions\Serializers;
 
 use BitWasp\Buffertools\Buffer;
-use ArkEcosystem\Tests\Crypto\TestCase;
-use ArkEcosystem\Crypto\Identities\PublicKey;
-use ArkEcosystem\Crypto\Identities\PrivateKey;
-use ArkEcosystem\Crypto\Transactions\Transaction;
-use ArkEcosystem\Crypto\Transactions\Deserializer;
+use PhantomChain\Tests\Crypto\TestCase;
+use PhantomChain\Crypto\Identities\PublicKey;
+use PhantomChain\Crypto\Identities\PrivateKey;
+use PhantomChain\Crypto\Transactions\Transaction;
+use PhantomChain\Crypto\Transactions\Deserializer;
 
 /**
  * This is the transaction test class.
  *
  * @author Brian Faust <brian@ark.io>
- * @covers \ArkEcosystem\Crypto\Transactions\Transaction
+ * @covers \PhantomChain\Crypto\Transactions\Transaction
  */
 class TransactionTest extends TestCase
 {

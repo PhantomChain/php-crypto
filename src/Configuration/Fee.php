@@ -3,18 +3,18 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Configuration;
+namespace PhantomChain\Crypto\Configuration;
 
-use ArkEcosystem\Crypto\Enums\Fees;
-use ArkEcosystem\Crypto\Enums\Types;
+use PhantomChain\Crypto\Enums\Fees;
+use PhantomChain\Crypto\Enums\Types;
 
 /**
  * This is the fee configuration class.

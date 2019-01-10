@@ -3,24 +3,24 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Tests\Crypto\Managers;
+namespace PhantomChain\Tests\Crypto\Managers;
 
-use ArkEcosystem\Tests\Crypto\TestCase;
-use ArkEcosystem\Crypto\Configuration\Fee;
+use PhantomChain\Tests\Crypto\TestCase;
+use PhantomChain\Crypto\Configuration\Fee;
 
 /**
  * This is the fee configuration test class.
  *
  * @author Brian Faust <brian@ark.io>
- * @covers \ArkEcosystem\Crypto\Configuration\Fee
+ * @covers \PhantomChain\Crypto\Configuration\Fee
  */
 class FeeTest extends TestCase
 {

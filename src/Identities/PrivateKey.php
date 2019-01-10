@@ -3,19 +3,19 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Ark PHP Crypto.
+ * This file is part of PHANTOM PHP Crypto.
  *
- * (c) Ark Ecosystem <info@ark.io>
+ * (c) PhantomChain <info@phantom.org>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Crypto\Identities;
+namespace PhantomChain\Crypto\Identities;
 
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Bitcoin\Crypto\Hash;
-use ArkEcosystem\Crypto\Networks\AbstractNetwork;
+use PhantomChain\Crypto\Networks\AbstractNetwork;
 use BitWasp\Bitcoin\Key\Factory\PrivateKeyFactory;
 use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey as EcPrivateKey;
 
@@ -56,7 +56,7 @@ class PrivateKey
      * Derive the private key for the given WIF.
      *
      * @param string                                             $wif
-     * @param \ArkEcosystem\Crypto\Networks\AbstractNetwork|null $network
+     * @param \PhantomChain\Crypto\Networks\AbstractNetwork|null $network
      *
      * @return \BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey
      */
